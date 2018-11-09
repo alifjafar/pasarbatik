@@ -14,7 +14,7 @@
     {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">--}}
     <style>
         .dropzone {
-            border: 2px dashed #f7363d;
+            border: 2px dashed #966b5e;
             border-radius: 5px;
             background: white;
         }
@@ -39,7 +39,8 @@
                     <h2 class="section-heading pl-3">Tambah Jasa</h2>
 
                     <div class="card p-4">
-                        <form action="{{ route('product.store') }}" method="post" enctype="multipart/form-data" id="thisproduct">
+                        <form action="{{ route('products.store') }}" method="post" enctype="multipart/form-data"
+                              id="thisproduct">
                             @csrf
                             <div class="row">
                                 <div class="col-md-12">
@@ -52,12 +53,11 @@
                                     {{-- Loop Content --}}
                                     <div class="row">
                                         <div class="form-group col-md-6">
-                                            <label for="name">Nama Kesenian</label>
+                                            <label for="name">Nama Produk</label>
                                             <input type="text" class="form-control" id="name" name="name" required>
-                                            <small class="text-muted">Contoh : Wayang Kulit</small>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label for="category">Kategori Kesenian</label>
+                                            <label for="category">Kategori Produk</label>
                                             <select class="selectpicker form-control" data-live-search="true"
                                                     title="Pilih Kategori"
                                                     data-style="bg-white border" id="category" name="category_id">
@@ -69,20 +69,25 @@
                                         <textarea name="description" id="description" rows="5" class="form-control"
                                                   placeholder="Deskripsi Kesenian"></textarea>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="price">Biaya</label>
-                                        <div class="row">
-                                            <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="price">Harga</label>
+
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text">Rp.</span>
                                                     </div>
-                                                    <input type="number" name="price" id="price" class="form-control">
+                                                    <input type="number" name="price" id="price" class="form-control"
+                                                           required>
                                                 </div>
-
                                             </div>
-                                            <div class="col-md-6">
-                                                <label class="col-form-label text-muted">Biaya dalam 1 hari</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="quantity">Jumlah</label>
+                                                <input type="number" name="quantity" id="quantity"
+                                                       class="form-control" required>
                                             </div>
                                         </div>
                                     </div>
@@ -157,18 +162,18 @@
 
         drop.on("success", function (file, res) {
             file.id = res.id;
-            $("#thisproduct").append($('<input type="hidden" ' + 'name="product_images[]" ' + 'value="' + res.id + '" id="image'+ res.id +'">'))
+            $("#thisproduct").append($('<input type="hidden" ' + 'name="product_images[]" ' + 'value="' + res.id + '" id="image' + res.id + '">'))
         });
 
 
-        drop.on('removedfile', function(file) {
+        drop.on('removedfile', function (file) {
             axios.delete('/delete-image/' + file.id)
-                .then(function(response) {
+                .then(function (response) {
                     console.log(response.status);
                     $('#image' + file.id).remove();
                 })
-                .catch(function(error) {
-            });
+                .catch(function (error) {
+                });
         });
 
     </script>

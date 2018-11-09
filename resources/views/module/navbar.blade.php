@@ -140,9 +140,9 @@
                             </li>
                             <li class="dropdown-divider"></li>
                             <li class="full-rum">
-                                <a href="{{ route('profile', Auth::user()->username) }}">Halaman Profil</a>
-                                <a href="{{ route('booking-list') }}">Riwayat Pesanan</a>
-                                <a href="{{ route('edit-profile', Auth::user()->username) }}">Pengaturan</a>
+                                <a href="#">Halaman Profil</a>
+                                <a href="#">Riwayat Pesanan</a>
+                                <a href="#">Pengaturan</a>
                             </li>
                             <li>
                                 <form action="{{ route('logout') }}" method="POST">
@@ -179,9 +179,9 @@
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="full-rum">
-                                    <a href="{{ route('profile', Auth::user()->username) }}">Halaman Profil</a>
-                                    <a href="{{ route('booking-list') }}">Riwayat Pesanan</a>
-                                    <a href="{{ route('edit-profile', Auth::user()->username) }}">Pengaturan</a>
+                                    <a href="#">Halaman Profil</a>
+                                    <a href="#">Riwayat Pesanan</a>
+                                    <a href="#">Pengaturan</a>
                                 <li>
                                     <form action="{{ route('logout') }}" method="POST">
                                         @csrf
