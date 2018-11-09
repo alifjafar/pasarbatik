@@ -19,6 +19,29 @@ class CreateCategoriesTable extends Migration
             $table->string('slug');
             $table->timestamps();
         });
+
+        \App\Models\Category::insert([
+            [
+                'name' => 'Pria',
+                'slug' => 'pria',
+            ],
+            [
+                'name' => 'Wanita',
+                'slug' => 'wanita'
+            ],
+            [
+                'name' => 'Aksesoris Batik',
+                'slug' => 'accesories'
+            ],
+            [
+                'name' => 'Anak',
+                'slug' => 'anak'
+            ],
+            [
+                'name' => 'Kain Batik',
+                'slug' => 'kain-batik'
+            ]
+        ]);
     }
 
     /**

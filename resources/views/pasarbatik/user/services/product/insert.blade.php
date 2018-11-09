@@ -46,7 +46,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="dropzone">Upload Image <a href="#" data-toggle="image-kesenian"
-                                                                              title="Upload Image Kesenianmu! (multiple image)"><i
+                                                                              title="Upload Image Productmu! (multiple image)"><i
                                                     class="fa fa-info-circle"></i></a></label>
                                         <div id="file" class="dropzone"></div>
                                     </div>

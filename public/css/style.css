@@ -19,7 +19,7 @@ a:hover {
 .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #f54f53;
+    background-color: #795548;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -789,7 +789,7 @@ a:hover {
 
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
     background: 0 0;
-    color: #f54f53;
+    color: #795548;
     text-decoration: none;
     transition: color .3s ease;
 }
@@ -863,7 +863,7 @@ a:hover {
 
 .account > li > a:hover {
     background: 0 0;
-    color: #f54f53;
+    color: #795548;
     text-decoration: none;
     transition: color .3s ease;
 }
@@ -942,7 +942,7 @@ a:hover {
 }
 
 .tablist a.active {
-    border-bottom: 1px solid #f54f53;
+    border-bottom: 1px solid #795548;
 }
 
 .sidebar-dashboard .profile-img img {
