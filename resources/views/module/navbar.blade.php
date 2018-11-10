@@ -88,7 +88,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-bell-o"></i>
+                            <i class="fa fa-bell"></i>
                             <span class="ml-1">Notifikasi</span>
                             <span class="badge badge-warning">2</span>
                         </a>
@@ -104,18 +104,11 @@
                                     class="fa fa-angle-right"></i></a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ route('products.create') }}" class="btn btn-sm btn-outline-light mt-1">Jual
+                            Barang</a>
+                    </li>
                 @endif
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">
-                        <i class="fa fa-question-circle"></i> Bantuan
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Hubungi Kami</a>
-                        <a class="dropdown-item" href="#">Pusat Bantuan</a>
-                    </div>
-                </li>
                 <li class="nav-item">
                     <span class="nav-link disabled"> </span>
                 </li>

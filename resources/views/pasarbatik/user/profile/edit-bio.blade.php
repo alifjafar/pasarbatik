@@ -17,7 +17,7 @@
                                 <img src="{{ $user->avatar }}" alt="{{ $user->profile->name }}"
                                      class="img-fluid rounded mx-auto d-block">
                                 <span class="pt-2 d-block text-center"><button type="button"
-                                                                               class="btn btn-sm btn-danger"
+                                                                               class="btn btn-sm btn-pasarbatik"
                                                                                data-toggle="change_avatar"
                                                                                title="Bagaimana Cara Ganti Avatar?"
                                                                                data-placement="bottom" data-content="Kamu dapat mengganti avatar
@@ -137,7 +137,7 @@
                                     <div class="form-group row justify-content-center">
                                         <div class="col-md-4">
                                             <button id="submit-data" type="submit"
-                                                    class="btn btn-sm btn-budayaku btn-block" disabled=""><i
+                                                    class="btn btn-sm btn-pasarbatik btn-block" disabled=""><i
                                                     class="fa fa-save"></i> Simpan
                                             </button>
                                         </div>

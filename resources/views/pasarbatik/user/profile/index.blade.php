@@ -10,7 +10,7 @@
                     <small class="mb-3 d-block text-white">Joined : {{ $user->created_at->diffForHumans() }}</small>
                     @if (Auth::check())
                         @if($user->username == Auth::user()->username)
-                        <a href="{{ route('edit-profile', $user->username) }}" class="btn btn-sm btn-budayaku"><i class="fa fa-cog"></i> Edit Profil</a>
+                        <a href="{{ route('edit-profile', $user->username) }}" class="btn btn-sm btn-pasarbatik"><i class="fa fa-cog"></i> Edit Profil</a>
                         @endif
                     @endif
                 </div>

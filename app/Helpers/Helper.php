@@ -23,7 +23,7 @@ function createSlug($title, $id = 0)
 
 function getRelatedSlugs($slug, $id = 0)
 {
-    return \App\Model\Product::select('slug')->where('slug', 'like', $slug . '%')
+    return \App\Models\Product::select('slug')->where('slug', 'like', $slug . '%')
         ->where('id', '<>', $id)
         ->get();
 }

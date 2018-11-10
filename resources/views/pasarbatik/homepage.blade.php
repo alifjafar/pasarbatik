@@ -151,138 +151,42 @@
                         <a href="#" class="category__link">Lihat Semua</a>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4 d-flex">
-                    <div class="card card-shadow no-border">
-                        <a href="#">
-                            <div class="card__img">
-                                {{--@if($post->image)--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}"--}}
-                                {{--class="card-img-top"> @endif--}}
-                                <img src="{{ asset('img/placeholder.svg') }}" class="card-img-top" alt="tes">
-                            </div>
-                        </a>
-                        <div class="card-body">
-                            <div class="card-product">
-                                <a href="#">Baju Batik Pria</a>
-                            </div>
+                @foreach($products as $item)
+                    <div class="col-md-3 mb-4 d-flex">
+                        <div class="card card-shadow no-border">
+                            <a href="#">
+                                <div class="card__img">
+                                    @if($item->image)
+                                        <img class="card-img-top" src='{{ asset('storage/' . $item->image) }}'
+                                             alt="{{ $item->name }}">
+                                    @else
+                                        <img src="{{ asset('img/placeholder.svg') }}" class="card-img-top" alt="{{ $item->name }}">
+                                    @endif
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <div class="card-product">
+                                    <a href="#">{{ $item->name }}</a>
+                                </div>
 
-                            <div class="card-price">
-                                <a class="" href="#">Rp. 150.000</a>
+                                <div class="card-price">
+                                    <span class="color-pasarbatik">{{ $item->harga }}</span>
+                                </div>
+                                <div class="card-store">
+                                    <a href="" class="text-muted"><i class="fa fa-store"></i> {{ $item->provider->name }}</a>
+                                </div>
                             </div>
-                            <div class="card-store">
-                                <a href="" class="text-muted"><i class="fa fa-store"></i> Butik Ayu Pekalongan</a>
+                            <div class="card-footer" style="font-size:12px">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="text-muted">(20 Ulasan)</span>
                             </div>
-                        </div>
-                        <div class="card-footer" style="font-size:12px">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="text-muted">(20 Ulasan)</span>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 mb-4 d-flex">
-                    <div class="card card-shadow no-border">
-                        <a href="#">
-                            <div class="card__img">
-                                {{--@if($post->image)--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}"--}}
-                                {{--class="card-img-top"> @endif--}}
-                                <img src="{{ asset('img/placeholder.svg') }}" class="card-img-top" alt="tes">
-                            </div>
-                        </a>
-                        <div class="card-body">
-                            <div class="card-product">
-                                <a href="#">Baju Batik Pria</a>
-                            </div>
-
-                            <div class="card-price">
-                                <a class="" href="#">Rp. 150.000</a>
-                            </div>
-                            <div class="card-store">
-                                <a href="" class="text-muted"><i class="fa fa-store"></i> Butik Ayu Pekalongan</a>
-                            </div>
-                        </div>
-                        <div class="card-footer" style="font-size:12px">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="text-muted">(20 Ulasan)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4 d-flex">
-                    <div class="card card-shadow no-border">
-                        <a href="#">
-                            <div class="card__img">
-                                {{--@if($post->image)--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}"--}}
-                                {{--class="card-img-top"> @endif--}}
-                                <img src="{{ asset('img/placeholder.svg') }}" class="card-img-top" alt="tes">
-                            </div>
-                        </a>
-                        <div class="card-body">
-                            <div class="card-product">
-                                <a href="#">Baju Batik Pria</a>
-                            </div>
-
-                            <div class="card-price">
-                                <a class="" href="#">Rp. 150.000</a>
-                            </div>
-                            <div class="card-store">
-                                <a href="" class="text-muted"><i class="fa fa-store"></i> Butik Ayu Pekalongan</a>
-                            </div>
-                        </div>
-                        <div class="card-footer" style="font-size:12px">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="text-muted">(20 Ulasan)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4 d-flex">
-                    <div class="card card-shadow no-border">
-                        <a href="#">
-                            <div class="card__img">
-                                {{--@if($post->image)--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}"--}}
-                                {{--class="card-img-top"> @endif--}}
-                                <img src="{{ asset('img/placeholder.svg') }}" class="card-img-top" alt="tes">
-                            </div>
-                        </a>
-                        <div class="card-body">
-                            <div class="card-product">
-                                <a href="#">Baju Batik Pria</a>
-                            </div>
-
-                            <div class="card-price">
-                                <a class="" href="#">Rp. 150.000</a>
-                            </div>
-                            <div class="card-store">
-                                <a href="" class="text-muted"><i class="fa fa-store"></i> Butik Ayu Pekalongan</a>
-                            </div>
-                        </div>
-                        <div class="card-footer" style="font-size:12px">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="text-muted">(20 Ulasan)</span>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

@@ -32,11 +32,11 @@
                         <ol class="breadcrumb" style="background:transparent">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
                             <li class="breadcrumb-item"><a href="#">Partner</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Tambah Jasa</li>
+                            <li class="breadcrumb-item active" aria-current="page">Jual Batik</li>
                         </ol>
                     </small>
                     <hr>
-                    <h2 class="section-heading pl-3">Tambah Jasa</h2>
+                    <h2 class="section-heading pl-3">Jual Batik</h2>
 
                     <div class="card p-4">
                         <form action="{{ route('products.store') }}" method="post" enctype="multipart/form-data"
@@ -45,7 +45,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="dropzone">Upload Image <a href="#" data-toggle="image-kesenian"
+                                        <label for="dropzone">Upload Image <a href="#" data-toggle="image-product"
                                                                               title="Upload Image Productmu! (multiple image)"><i
                                                     class="fa fa-info-circle"></i></a></label>
                                         <div id="file" class="dropzone"></div>
@@ -67,7 +67,7 @@
                                     <div class="form-group">
                                         <label for="description">Deskripsi</label>
                                         <textarea name="description" id="description" rows="5" class="form-control"
-                                                  placeholder="Deskripsi Kesenian"></textarea>
+                                                  placeholder="Deskripsi Produk"></textarea>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
@@ -92,19 +92,18 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="video">Video <a href="#" data-toggle="video"
-                                                                    title="Video Dokumentasi Kesenian (Opsional)"><i
-                                                    class="fa fa-info-circle"></i></a></label>
-                                        <input type="text" class="form-control" name="video" id="video">
-                                        <small class="text-muted">Masukan URL video dokumentasi kesenian dari <a
-                                                href="https://youtube.com">
-                                                youtube
-                                            </a></small>
+                                        <label for="size">Ukuran (Size)</label>
+                                        <select name="size[]" id="size" class="form-control select2" multiple>
+                                            <option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                            <option value="xl">XL</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <span class="float-right">
 
-                                            <button type="submit" class="btn btn-sm btn-budayaku">Publish</button>
+                                            <button type="submit" class="btn btn-sm btn-pasarbatik">Publish</button>
                                         </span>
                                     </div>
 
@@ -123,15 +122,17 @@
     <script type="text/javascript">
         $(function () {
             $('[data-toggle="video"]').tooltip();
-            $('[data-toggle="image-kesenian"]').tooltip()
         });
 
         @if(Session::has('success'))
-        swal("Berhasil !", "Product kesenian telah berhasil di publish", "success");
+        swal("Berhasil !", '{{ Session::get('success') }}', "success");
         @endif
 
 
-        $(document).ready(function () {
+        $(function () {
+
+            $('.select2').select2();
+
             $.ajax({
                 async: false,
                 type: 'GET',

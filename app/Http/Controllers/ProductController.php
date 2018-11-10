@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ImageProduct;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -22,13 +23,16 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        $request['slug'] = createSlug($request['name']);
-        $request['partner_id'] = Auth::user()->provider->id;
-        $product = Product::create($request->all());
+        $newProduct = $request->all();
+        $newProduct['slug'] = createSlug($request['name']);
+        $newProduct['partner_id'] = Auth::user()->provider->id;
+        $newProduct['size'] = json_encode($request['size']);
+
+        $product = Product::create($newProduct);
 
         $product->productimage()->sync($request['product_images']);
 
-        Session::flash('success', 'Berhasil');
+        Session::flash('success', 'Produk telah berhasil di publish');
         return redirect()->back();
     }
 
@@ -40,7 +44,7 @@ class ProductController extends Controller
         $path = 'uploads/product/';
         $size = $uploadedFile->getSize();
 
-        Storage::disk('public')->putFileAs($path,$uploadedFile,  $fileName);
+        Storage::disk('public')->putFileAs($path, $uploadedFile, $fileName);
 
         $upload = ImageProduct::create([
             'filename' => $fileName,

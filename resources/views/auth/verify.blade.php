@@ -19,7 +19,7 @@
                         <br>
                     {{ __('Jika kamu belum mendapatkan email dari kami, klik tombol dibawah ini untuk mengirim ulang link verifikasi') }}
                     </div>
-                        <a href="{{ route('verification.resend') }}"> <span class="btn btn-sm btn-budayaku"><i class="fa fa-sign-in"></i> Resend Verification</span></a>.
+                        <a href="{{ route('verification.resend') }}"> <span class="btn btn-sm btn-pasarbatik"><i class="fa fa-sign-in"></i> Resend Verification</span></a>.
                 </div>
             </div>
         </div>

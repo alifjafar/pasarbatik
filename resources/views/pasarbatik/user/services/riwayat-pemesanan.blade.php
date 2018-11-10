@@ -54,7 +54,7 @@
                                     <p><strong><i>Dibayar</i></strong></p>
                                 </div>
                                 <div class="col-md-2 mt-3">
-                                    <a href="/payment/invoices/BDYXII902391031" class="btn btn-budayaku">Lihat Rincian</a>
+                                    <a href="/payment/invoices/BDYXII902391031" class="btn btn-pasarbatik">Lihat Rincian</a>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                                     <p><strong><i>Dibayar</i></strong></p>
                                 </div>
                                 <div class="col-md-2 mt-3">
-                                    <a href="/payment/invoices/BDYXII902391031" class="btn btn-budayaku">Lihat Rincian</a>
+                                    <a href="/payment/invoices/BDYXII902391031" class="btn btn-pasarbatik">Lihat Rincian</a>
                                 </div>
                             </div>
                         </div>

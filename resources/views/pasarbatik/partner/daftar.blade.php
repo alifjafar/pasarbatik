@@ -14,7 +14,7 @@
                     <div class="card">
                         <div class="container mb-3 mt-3 ">
                             <div class="row px-2">
-                                <div class="col-md-9">
+                                <div class="col-md-12">
                                     <form action="{{ route('partner.register') }}" method="post"
                                           enctype="multipart/form-data">
                                         @csrf
@@ -30,11 +30,10 @@
                                         <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
                                         <div class="form-group">
                                             <label for="name" class="col-form-label"><strong>Nama
-                                                    Komunitas</strong></label>
+                                                    Toko</strong></label>
                                             <input id="name" type="text"
                                                    class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
-                                                   name="name" value="{{ old('name') }}"
-                                                   placeholder="Komunitas / Sanggar" required>
+                                                   name="name" value="{{ old('name') }}" required>
                                             @if ($errors->has('name'))
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $errors->first('name') }}</strong>
@@ -43,13 +42,13 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="slug" class="col-form-label"><strong>Tentukan URL Komunitas
+                                            <label for="slug" class="col-form-label"><strong>Tentukan URL Toko
                                                     (Slug)</strong> <a href="#" data-toggle="slug"
-                                                                       title="Memudahkan User Menemukan Komunitasmu"><i
+                                                                       title="Memudahkan User Menemukan Toko Kamu"><i
                                                         class="fa fa-info-circle"></i></a></label>
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text">https//budayaku.online/</span>
+                                                    <span class="input-group-text">https://pasarbatik.id/</span>
                                                 </div>
                                                 <input type="text"
                                                        class="form-control {{ $errors->has('slug') ? ' is-invalid' : '' }}"
@@ -64,10 +63,10 @@
 
                                         <div class="form-group">
                                             <label for="description" class="col-form-label"><strong>Deskripsi
-                                                    Komunitas</strong></label>
+                                                    Toko</strong></label>
                                             <textarea name="description" id="description"
                                                       class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}"
-                                                      placeholder="Deskripsi Mengenai Komunitasmu"
+                                                      placeholder="Deskripsi Mengenai Tokomu"
                                                       rows="3">{{ old('description') }}</textarea>
                                             @if ($errors->has('description'))
                                                 <span class="invalid-feedback" role="alert">
@@ -78,10 +77,10 @@
 
                                         <div class="form-group">
                                             <label for="address" class="col-form-label"><strong>Alamat Lengkap
-                                                    Komunitas</strong></label>
+                                                    Toko</strong></label>
                                             <textarea name="address" id="address"
                                                       class="form-control {{ $errors->has('address') ? ' is-invalid' : '' }}"
-                                                      placeholder="Alamat Lengkap Komunitas"
+                                                      placeholder="Alamat Lengkap Toko"
                                                       rows="3">{{ old('address') }}</textarea>
                                             @if ($errors->has('address'))
                                                 <span class="invalid-feedback" role="alert">
@@ -108,10 +107,8 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <a href="#" class="btn btn-outline-danger btn-sm"><i
-                                                    class="fa fa-close"></i> Cancel</a>
-                                            <button type="submit" class="btn btn-budayaku btn-sm"><i
-                                                    class="fa fa-save"></i> Daftar
+                                            <a href="#" class="btn btn-danger btn-sm">Cancel</a>
+                                            <button type="submit" class="btn btn-pasarbatik btn-sm">Daftar
                                             </button>
                                         </div>
 

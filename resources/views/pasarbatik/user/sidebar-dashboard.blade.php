@@ -12,11 +12,11 @@
 
         @if(!Auth::user()->isPartner())
             <div id="new-agent" class="mt-3">
-                <a href="{{ route('register-partner') }}" class="btn btn-sm btn-budayaku btn-block">Daftar Partner</a>
+                <a href="{{ route('register-partner') }}" class="btn btn-sm btn-pasarbatik btn-block">Daftar Partner</a>
             </div>
         @else
             <div id="addService" class="mt-3">
-                <span class="btn btn-sm btn-budayaku btn-block" onclick="swalMe()">Iklankan Jasa</span>
+                <span class="btn btn-sm btn-pasarbatik btn-block" onclick="swalMe()">Iklankan Jasa</span>
             </div>
         @endif
         <div id="nav-sidebar" class="mt-3">
@@ -52,7 +52,7 @@
                     icon: "error",
                 });
                 @else
-                    window.location.href = '{{ route('product.create') }}';
+                    window.location.href = '{{ route('products.create') }}';
                 @endif
             @endif
         }

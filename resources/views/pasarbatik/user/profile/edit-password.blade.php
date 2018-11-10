@@ -65,7 +65,7 @@
                                     </div>
                                     <div class="form-group row justify-content-center">
                                         <div class="col-md-4">
-                                            <button type="submit" class="btn btn-sm btn-budayaku btn-block"><i
+                                            <button type="submit" class="btn btn-sm btn-pasarbatik btn-block"><i
                                                     class="fa fa-save"></i> Simpan
                                             </button>
                                         </div>
