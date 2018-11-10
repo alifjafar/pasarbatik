@@ -57,11 +57,19 @@ a:hover {
 .color-pasarbatik {
     color: #795548;
 }
-
+.dropdown-btn {
+    width: 100%;
+    height: 50%;
+    text-align: left;
+}
 .budayaku-dark {
     color: #4a4a4a;
 }
 
+.btn-pasarbatik {
+    color: #795548;
+    width: 100%;
+}
 .section-heading {
     font-size: 29px;
     line-height: 35px;
@@ -911,6 +919,61 @@ a:hover {
     margin-bottom: 200px;
 }
 
+
+.page-link-pasarbatik {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #795548;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+  }
+  
+  .page-link-pasarbatik:hover {
+    z-index: 2;
+    color: #795548;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+  
+  .page-link-pasarbatik:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .page-link-pasarbatik:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+.page-item-pasarbatik:first-child .page-link-pasarbatik {
+    margin-left: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+  
+.page-item-pasarbatik:last-child .page-link-pasarbatik {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+.page-item-pasarbatik.active .page-link-pasarbatik {
+    z-index: 1;
+    color: #fff;
+    background-color: #795548;
+    border-color: #795548;
+  }
+
+  .page-item-pasarbatik.disabled .page-link-pasarbatik {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+  }
+  
 .history-transaksi {
     padding: 1em;
 }

@@ -35,3 +35,7 @@ Route::group(['middleware' => ['auth']], function () {
 Route::get('/payment/invoices', function () {
     return view('budayaku.user.services.riwayat-pemesanan');
 })->name('booking-list');
+
+Route::get('/daftarproduk', function () {
+    return view('pasarbatik.daftarproduk');
+});
