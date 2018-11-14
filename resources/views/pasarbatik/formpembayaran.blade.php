@@ -7,37 +7,22 @@
                 <div class="container col-lg-6 mt-5">
                     <form action="">
                         <!-- Form detai acara -->
-                            <span class="form-header">Detail Acara</span>
+                            <span class="form-header">Checkout</span>
                             <div class="container form-pembayaran">
-                                <label class="mt-3" for="namaeo">Nama Event Owner / Event Organizer</label><br>
+                                <label class="mt-3" for="namaeo">Nama</label><br>
                                 <input type="text" class="form-control mb-3" id="inputnamaeo" placeholder="Masukan Nama">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <label for="email">E-Mail</label>
                                             <input type="text" class="form-control mb-3" id="inputemail" placeholder="Masukan Nama">
-                                            <label for="tglacara">Tanggal Acara</label><br>
-                                            <div class="form-group row">
-                                                <label for="inputTglMulai" class="col-sm-4 col-form-label">Mulai</label>
-                                                <div class="col-sm-8">
-                                                <input type="date" class="form-control" id="inputMulai" placeholder="dd/mm/yyyy">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="inputTglMulai" class="col-sm-4 col-form-label">Berakhir</label>
-                                                <div class="col-sm-8">
-                                                <input type="date" class="form-control" id="inputBerakhir" placeholder="dd/mm/yyyy">
-                                                </div>
-                                            </div>
                                         </div>
                                         <div class="col-md-6">
                                             <label for="email">No Handphone</label>
                                             <input type="text" class="form-control mb-3" id="inputnohp" placeholder="Masukan No Handphone">
-                                            <label for="tglberangkat">Tanggal Keberangkatan</label>
-                                            <input type="date" class="form-control" id="inputberangkat" placeholder="dd/mm/yyyy-dd/mm/yyyy">
                                         </div>
                                     </div>
 
-                                <p class="mt-3">Alamat Acara</p>
+                                <p class="mt-3">Alamat Pengiriman</p>
                                 <label for="prov">Provinsi</label>
                                 <input type="text" class="form-control mb-3" id="inputprov" placeholder="Masukan Provinsi">
                                 <label for="kab">Kabupaten / Kota</label>
@@ -88,23 +73,15 @@
                                                 <p>Harga</p>
                                             </div>
                                             <div class="col-sm-5">
-                                                <p>Rp.2000.000</p>
+                                                <p>Rp. 150.000</p>
                                              </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-7">
-                                                <p>Biaya Transportasi</p>
-                                            </div>
-                                            <div class="col-sm-5">
-                                                <p>Rp.2000.000</p>
-                                            </div>
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-sm-7">
                                                 <p><strong>Total</strong></p>
                                             </div>
                                             <div class="col-sm-5">
-                                                <p><strong>Rp.2000.000</strong></p>
+                                                <p><strong>Rp. 150.000</strong></p>
                                             </div>
                                         </div>
 

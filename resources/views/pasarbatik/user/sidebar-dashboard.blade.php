@@ -29,7 +29,7 @@
         @if(Auth::user()->isPartner())
             <hr />
             <div id="agent" class="mt-3">
-                <small class="text-muted">Mitra Budayaku</small>
+                <small class="text-muted">Mitra PasarBatik</small>
             </div>
             <div id="nav-sidebar">
                 <nav class="nav flex-column">

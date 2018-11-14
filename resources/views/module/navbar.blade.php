@@ -31,11 +31,10 @@
                         <i class="fa fa-list-ul "></i> Kategori
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Seni Wayang</a>
-                        <a class="dropdown-item" href="#">Seni Tari</a>
-                        <a class="dropdown-item" href="#">Seni Opera</a>
-                        <a class="dropdown-item" href="#">Seni Drama</a>
-                        <a class="dropdown-item" href="#">Seni Teater</a>
+                        <a class="dropdown-item" href="#">Pria</a>
+                        <a class="dropdown-item" href="#">Wanita</a>
+                        <a class="dropdown-item" href="#">Aksesoris Batik</a>
+                        <a class="dropdown-item" href="#">Anak</a>
                     </div>
                 </li>
             </ul>

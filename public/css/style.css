@@ -78,7 +78,7 @@ a:hover {
 .red-divider {
     width: 70px;
     height: 5px;
-    background-color: #f55c60;
+    background-color: #795548;
     margin: 0 auto;
     margin-top: 12 p;
 }
@@ -403,7 +403,7 @@ a:hover {
 
 .card__price {
     font-weight: 600;
-    color: #d71149;
+    color: #795548;
 }
 
 #budayaku__desc {
@@ -441,7 +441,7 @@ a:hover {
 }
 
 .sosmed-button a:hover {
-    color: #f55c60;
+    color: #795548;
 }
 
 .learn-more {
@@ -503,7 +503,7 @@ a:hover {
 
 @media screen and (max-width: 760px) {
     .rating {
-        color: #f55c60;
+        color: #795548;
     }
 
     .jb-text {
@@ -581,7 +581,7 @@ a:hover {
     color: white;
     border-radius: 1rem;
     margin-right: 4rem;
-    background-color: #f55c60;
+    background-color: #795548;
 }
 
 .btn-book:hover {
@@ -611,7 +611,7 @@ a:hover {
     background-color: #f7f5f5;
     background-clip: padding-box;
     /* border: 1px solid #ced4da;
-    border-color: #f55c60; */
+    border-color: #795548; */
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -671,7 +671,7 @@ a:hover {
 }
 
 .btn-explore {
-    background-color: #f55c60;
+    background-color: #795548;
     color: #fff;
     border-radius: 5rem;
 }
@@ -684,6 +684,11 @@ a:hover {
 
 /* Custom Radio Button Override */
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #795548;
+}
+
+/* Custom Checkbox Button Override */
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
     background-color: #795548;
 }
 

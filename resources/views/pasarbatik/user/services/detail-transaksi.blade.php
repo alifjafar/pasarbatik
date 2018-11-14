@@ -14,7 +14,7 @@
                         <ol class="breadcrumb" style="background:transparent">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
                             <li class="breadcrumb-item"><a href="/payment/invoices">Transaksi</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">BDYXII902391031</li>
+                            <li class="breadcrumb-item active" aria-current="page">PBTKXII902391031</li>
                         </ol>
                     </small>
                     <hr>
@@ -22,24 +22,24 @@
                 <div class="card history-transaksi">
                     {{-- Loop Content --}}
                     <div class="form-header">
-                        Nomor Transaksi : <b>BDYXII902391031</b>
+                        Nomor Transaksi : <b>PBTKXII902391031</b>
                         <span class="pull-right"><a href="#" class="badge color-budayaku"><i class="fa fa-print"></i> Print</a></span>
                     </div>
                     <div class="form-pembayaran p-md-3">
                         <div class="row border-bottom">
                             <div class="col-sm-4">
-                                <img class="d-block mx-auto card-img-transaksi mb-3" src="{{ asset('img/wayang_lemah.jpg') }}" alt="">
+                                <img class="d-block mx-auto card-img-transaksi mb-3" src="{{ asset('img/product/kemeja2.jpg') }}" alt="">
                             </div>
                             <div class="col-sm-5 align-content-center">
                                 <div>
                                     <small class="text-muted">Nama</small>
                                     <a href="">
-                                        <p>Wayang Lemah</p>
+                                        <p>Kemeja Batik Pria</p>
                                     </a>
                                 </div>
                                 <div>
-                                    <small class="text-muted">Penyedia Jasa</small>
-                                    <p><a href="" class="text-dark">Sanggar Paripurna - Bali</a></p>
+                                    <small class="text-muted">Toko</small>
+                                    <p><a href="" class="text-dark">Toko Batik Y</a></p>
 
                                 </div>
                                 <div>
@@ -50,34 +50,34 @@
                             </div>
                             <div class="col-sm-3">
                                 <div>
-                                    <small class="text-muted">Harga Layanan :</small>
-                                    <p class="price-amount">Rp 2.000.000</p>
+                                    <small class="text-muted">Harga :</small>
+                                    <p class="price-amount">Rp 150.000</p>
                                 </div>
                                 <div>
-                                    <small class="text-muted">Biaya Transportasi :</small>
-                                    <p class="price-amount">Rp 1.000.000</p>
+                                    <small class="text-muted">Ongkir :</small>
+                                    <p class="price-amount">Rp 20.000</p>
                                 </div>
                                 <div>
                                     <small class="text-muted">Total :</small>
-                                    <p class="price-amount">Rp. 3.000.000</p>
+                                    <p class="price-amount">Rp. 170.000</p>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="row text-center bg-light border-bottom">
-                            <div class="col-sm-4 p-md-2">
-                                <small class="text-muted"><i class="fa fa-calendar"></i> Tanggal Keberangkatan</small>
-                                <p>15 September 2018</p>
-                            </div>
-                            <div class="col-sm-4 p-md-2">
-                                <small class="text-muted"><i class="fa fa-calendar"></i> Tanggal Mulai Acara</small>
-                                <p>17 September 2018</p>
-                            </div>
-                            <div class="col-sm-4 p-md-2">
-                                <small class="text-muted"><i class="fa fa-calendar"></i> Tanggal Berakhir Acara</small>
-                                <p>18 September 2018</p>
-                            </div>
-                        </div>
+                        {{--<div class="row text-center bg-light border-bottom">--}}
+                            {{--<div class="col-sm-4 p-md-2">--}}
+                                {{--<small class="text-muted"><i class="fa fa-calendar"></i> Tanggal Keberangkatan</small>--}}
+                                {{--<p>15 September 2018</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-sm-4 p-md-2">--}}
+                                {{--<small class="text-muted"><i class="fa fa-calendar"></i> Tanggal Mulai Acara</small>--}}
+                                {{--<p>17 September 2018</p>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-sm-4 p-md-2">--}}
+                                {{--<small class="text-muted"><i class="fa fa-calendar"></i> Tanggal Berakhir Acara</small>--}}
+                                {{--<p>18 September 2018</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
                         <div class="container mt-4">
                             <small class="text-muted">Detail Alamat</small>
                             <p>Gedung serba guna Jl. Telekomunikasi No. 01, Terusan Buah Batu, Sukapura, Dayeuhkolot, Bandung,

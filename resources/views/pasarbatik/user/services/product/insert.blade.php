@@ -91,6 +91,21 @@
                                             </div>
                                         </div>
                                     </div>
+                                    {{--<div class="form-group">--}}
+                                        {{--<label>Size</label>--}}
+                                        {{--<div class="custom-control custom-checkbox">--}}
+                                            {{--<input type="checkbox" name="size[]" class="custom-control-input" id="sizeS">--}}
+                                            {{--<label for="sizeS" class="custom-control-label">S</label>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="custom-control custom-checkbox">--}}
+                                            {{--<input type="checkbox" name="size[]" class="custom-control-input" id="sizeM">--}}
+                                            {{--<label for="sizeM" class="custom-control-label">M</label>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="custom-control custom-checkbox">--}}
+                                            {{--<input type="checkbox" name="size[]" class="custom-control-input" id="sizeL">--}}
+                                            {{--<label for="sizeL" class="custom-control-label">L</label>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
                                     <div class="form-group">
                                         <label for="size">Ukuran (Size)</label>
                                         <select name="size[]" id="size" class="form-control select2" multiple>
@@ -121,7 +136,7 @@
 @push('js')
     <script type="text/javascript">
         $(function () {
-            $('[data-toggle="video"]').tooltip();
+            $('[data-toggle="image-product"]').tooltip();
         });
 
         @if(Session::has('success'))

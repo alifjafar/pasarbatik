@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('description', '- Taglinenya')
+@section('description', '- Bangga Pakai Batik Indonesia')
 @section('content')
 
     <section class="card-post mt-5">
@@ -15,10 +15,10 @@
                         <a href="#">
                             <div class="card__img">
                                 {{--@if($post->image)--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}"--}}
+                                {{--<img src="{{ asset('img/product/kemeja2.jpg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
+                                {{--<img src="{{ asset('img/product/kemeja2.jpg') }}" alt="{{ $post->title }}"--}}
                                 {{--class="card-img-top"> @endif--}}
-                                <img src="{{ asset('img/placeholder.svg') }}" class="card-img-top" alt="tes">
+                                <img src="{{ asset('img/product/kemeja2.jpg') }}" class="card-img-top" alt="tes">
                             </div>
                         </a>
                         <div class="card-body">
@@ -48,10 +48,10 @@
                         <a href="#">
                             <div class="card__img">
                                 {{--@if($post->image)--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}"--}}
+                                {{--<img src="{{ asset('img/product/kemeja2.jpg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
+                                {{--<img src="{{ asset('img/product/kemeja2.jpg') }}" alt="{{ $post->title }}"--}}
                                 {{--class="card-img-top"> @endif--}}
-                                <img src="{{ asset('img/placeholder.svg') }}" class="card-img-top" alt="tes">
+                                <img src="{{ asset('img/product/kemeja3.jpg') }}" class="card-img-top" alt="tes">
                             </div>
                         </a>
                         <div class="card-body">
@@ -81,10 +81,10 @@
                         <a href="#">
                             <div class="card__img">
                                 {{--@if($post->image)--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}"--}}
+                                {{--<img src="{{ asset('img/product/kemeja2.jpg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
+                                {{--<img src="{{ asset('img/product/kemeja2.jpg') }}" alt="{{ $post->title }}"--}}
                                 {{--class="card-img-top"> @endif--}}
-                                <img src="{{ asset('img/placeholder.svg') }}" class="card-img-top" alt="tes">
+                                <img src="{{ asset('img/product/kemeja2.jpg') }}" class="card-img-top" alt="tes">
                             </div>
                         </a>
                         <div class="card-body">
@@ -114,10 +114,10 @@
                         <a href="#">
                             <div class="card__img">
                                 {{--@if($post->image)--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
-                                {{--<img src="{{ asset('img/placeholder.svg') }}" alt="{{ $post->title }}"--}}
+                                {{--<img src="{{ asset('img/product/kemeja2.jpg') }}" alt="{{ $post->title }}" class="lazyload" data-src="{{ Voyager::image( $post->image ) }}"> @else--}}
+                                {{--<img src="{{ asset('img/product/kemeja2.jpg') }}" alt="{{ $post->title }}"--}}
                                 {{--class="card-img-top"> @endif--}}
-                                <img src="{{ asset('img/placeholder.svg') }}" class="card-img-top" alt="tes">
+                                <img src="{{ asset('img/product/kemeja2.jpg') }}" class="card-img-top" alt="tes">
                             </div>
                         </a>
                         <div class="card-body">
@@ -154,13 +154,13 @@
                 @foreach($products as $item)
                     <div class="col-md-3 mb-4 d-flex">
                         <div class="card card-shadow no-border">
-                            <a href="#">
+                            <a href="{{ route('detail-product', $item->slug) }}">
                                 <div class="card__img">
                                     @if($item->image)
                                         <img class="card-img-top" src='{{ asset('storage/' . $item->image) }}'
                                              alt="{{ $item->name }}">
                                     @else
-                                        <img src="{{ asset('img/placeholder.svg') }}" class="card-img-top" alt="{{ $item->name }}">
+                                        <img src="{{ asset('img/product/kemeja2.jpg') }}" class="card-img-top" alt="{{ $item->name }}">
                                     @endif
                                 </div>
                             </a>
